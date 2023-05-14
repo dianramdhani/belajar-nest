@@ -1,0 +1,24 @@
+GET https://belajar-nest2.herokuapp.com/users
+
+###
+GET https://belajar-nest2.herokuapp.com/users/645f8bc9fc16be04152aab00
+
+###
+DELETE  https://belajar-nest2.herokuapp.com/users/645f99a6f0bdc093cc3a3513
+
+###
+POST https://belajar-nest2.herokuapp.com/users
+Content-Type: application/json
+
+{
+    "name": "Ramdhani",
+    "email": "ramdhani@mail.com"
+}
+
+###
+PATCH https://belajar-nest2.herokuapp.com/users/645f985a43d9e39ffb2cd179
+Content-Type: application/json
+
+{
+    "name": "John Doe baru"
+}

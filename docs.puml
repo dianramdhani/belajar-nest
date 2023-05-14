@@ -1,0 +1,33 @@
+# Sequence membuat rest
+
+@startuml
+actor Programmer
+participant CLI
+participant Env
+participant Schema
+participant PrismaService
+participant DTO
+participant Controller
+participant Service
+participant Rest
+
+Programmer -> CLI : prisma init
+Programmer -> Env : update DATABASE_URL
+Programmer -> Schema : update datasource
+Programmer -> Schema : buat model
+Programmer -> CLI : prisma migrate dev
+note over CLI: atau **prisma db push**
+Programmer -> CLI : buat PrismaService
+note over CLI
+nest g mo prisma
+nest g s --no-spec prisma/prisma
+end note
+CLI -> PrismaService : update service
+Programmer -> CLI : nest g --no-spec res <nama module>
+CLI -> DTO : update dto sesuaikan dengan model dan form
+DTO -> Controller : update controller sesuaikan dengan dto
+Controller -> Service : update service sesuaikan dengan dto
+note over Service: implement prismaService
+Service -> DTO : tambahkan validator
+Programmer -> Rest : test
+@enduml

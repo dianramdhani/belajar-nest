@@ -1,0 +1,31 @@
+GET https://belajar-nest2.herokuapp.com/posts
+
+###
+GET https://belajar-nest2.herokuapp.com/posts?authorId=645fa2dedbbde799cafb85d8
+
+###
+POST https://belajar-nest2.herokuapp.com/posts
+Content-Type: application/json
+
+{
+    "title": "Baru",
+    "content": "This is my first post",
+    "published": false,
+    "authorId": "645fa2dedbbde799cafb85d8"
+}
+
+###
+PATCH https://belajar-nest2.herokuapp.com/posts/5f9b1b3b9b9b9b9b9b9b9b9b
+Content-Type: application/json
+
+{
+    "title": "My first post",
+    "content": "This is my first post",
+    "published": false,
+    "authorId": "645fa2dedbbde799cafb85d8"
+}
+
+###
+DELETE https://belajar-nest2.herokuapp.com/posts/645fc8dac29ff2920d62d63e
+
+# 645f8bc9fc16be04152aab00

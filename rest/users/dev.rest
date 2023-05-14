@@ -1,0 +1,24 @@
+GET http://localhost:3000/users
+
+###
+GET http://localhost:3000/users/645f8bc9fc16be04152aab00
+
+###
+DELETE  http://localhost:3000/users/645f981a43d9e39ffb2cd178
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "tes",
+    "email": "tes@mail.com"
+}
+
+###
+PATCH http://localhost:3000/users/645fa2dedbbde799cafb85d8
+Content-Type: application/json
+
+{
+    "email": "123"
+}
