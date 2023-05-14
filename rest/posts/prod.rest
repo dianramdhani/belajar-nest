@@ -1,10 +1,10 @@
-GET https://belajar-nest2.herokuapp.com/posts
+GET https://belajar-nest.herokuapp.com/posts
 
 ###
-GET https://belajar-nest2.herokuapp.com/posts?authorId=645fa2dedbbde799cafb85d8
+GET https://belajar-nest.herokuapp.com/posts?authorId=645fa2dedbbde799cafb85d8
 
 ###
-POST https://belajar-nest2.herokuapp.com/posts
+POST https://belajar-nest.herokuapp.com/posts
 Content-Type: application/json
 
 {
@@ -15,7 +15,7 @@ Content-Type: application/json
 }
 
 ###
-PATCH https://belajar-nest2.herokuapp.com/posts/5f9b1b3b9b9b9b9b9b9b9b9b
+PATCH https://belajar-nest.herokuapp.com/posts/5f9b1b3b9b9b9b9b9b9b9b9b
 Content-Type: application/json
 
 {
@@ -26,6 +26,6 @@ Content-Type: application/json
 }
 
 ###
-DELETE https://belajar-nest2.herokuapp.com/posts/645fc8dac29ff2920d62d63e
+DELETE https://belajar-nest.herokuapp.com/posts/645fc8dac29ff2920d62d63e
 
 # 645f8bc9fc16be04152aab00
